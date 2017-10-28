@@ -8,7 +8,7 @@ NOTE #2: This project was developed using Docker on 64-bit Intel based MacOS.  A
 
 NOTE #3: This project has NOT been pushed to Docker Hub: Dockerfile must be downloaded and built.
 
-NOTE #4: No Alpine Linux package seems to include a dictionary of words.  As such, the 'dictionary' file in this project was copied from MacOS: /usr/share/dict/words.
+NOTE #4: No Alpine Linux package seems to include a dictionary of words.  As such, the 'dictionary' file in this project was copied from MacOS: /usr/share/dict/words
 
 NOTE #5: MacOS's dictionary seems to count each letter of the alphabet as a word.  To suppress this from results, the application is implemented to ignore all single letter words from the dictionary.  At the moment, this restriction includes valid words 'a' and 'i'.  The application can always be patched to include these words if necessary.
 
