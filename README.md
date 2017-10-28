@@ -8,9 +8,11 @@ NOTE #2: This project was developed using Docker on 64-bit Intel based MacOS.  A
 
 NOTE #3: This project has NOT been pushed to Docker Hub: Dockerfile must be downloaded and built.
 
-NOTE #4: No Alpine Linux package seems to include a dictionary of words.  As such, the 'dictionary' file in this project was copied from MacOS (/usr/share/dict/words).  MacOS's dictionary seems to count each letter of the alphabet as a word.  To suppress this from results, the application is implemented to ignore all single letter words from the dictionary.  At the moment, this restriction includes valid words 'a' and 'i'.  The application can always be patched to include these words if necessary.
+NOTE #4: No Alpine Linux package seems to include a dictionary of words.  As such, the 'dictionary' file in this project was copied from MacOS: /usr/share/dict/words.
 
-NOTE #5: The project requirements didn't specify one way or another how to handle words with mixed case letters.  As such, the application only considers words from the dictionary with all lowercase letters.  This helps ignore capitalized proper nouns, which also appear in MacOS's dictionary.  Effectively, the application ignores any uppercase letters submitted.  The application can always be patched to integrate more specific requirements.
+NOTE #5: MacOS's dictionary seems to count each letter of the alphabet as a word.  To suppress this from results, the application is implemented to ignore all single letter words from the dictionary.  At the moment, this restriction includes valid words 'a' and 'i'.  The application can always be patched to include these words if necessary.
+
+NOTE #6: The project requirements didn't specify one way or another how to handle words with mixed case letters.  As such, the application only considers words from the dictionary with all lowercase letters.  This helps ignore capitalized proper nouns, which also appear in MacOS's dictionary.  Effectively, the application ignores any uppercase letters submitted.  The application can always be patched to integrate more specific requirements.
 
 INSTALLATION INSTRUCTIONS
 =========================
