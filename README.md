@@ -30,7 +30,7 @@ It will take several minutes for the Docker image to build.
 
 EXECUTION INSTRUCTIONS
 ======================
-1) Instantiate an instance of the image (as dicated by project requirements) with:
+1) Instantiate an instance of the image (as dictated by project requirements) with:
 
 $ docker run -d -p 8080:80 submission
 
